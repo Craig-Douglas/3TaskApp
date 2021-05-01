@@ -1,4 +1,4 @@
-# DoStuffGetBeer
+# 3TaskApp
 
 React Project based on Tracker Turorial by Brad Traversy.
 Followed along as an introdution to React, then added own styling/features etc....
