@@ -12,7 +12,7 @@ const AddTask = ({ onAdd}) => {
         e.preventDefault()
 
         if(!text) {
-            alert('Please add a task to earn a beer....')
+            alert('No tasks remaining -   Do this every day to achieve an additional 21 tasks per week!!')
             return
         }
 
@@ -29,20 +29,20 @@ const AddTask = ({ onAdd}) => {
         <form className="add-form" onSubmit={onSubmit}>
             <div className='form-control'>
                 <label>Task</label>
-                <input type='text' placeholder='What it is that needs done to get you to the Beer...'
+                <input type='text' placeholder='Enter 1 of 3 daily tasks....'
                 value={text} onChange={(e) => setText(e.target.value) }/>
             
 
             </div>
             <div className='form-control' form-control-check>
                 <label>Day & Time</label>
-                <input type='text' placeholder='Day and time the stuff needs done...'
+                <input type='text' placeholder='Day and time allocated to complete the task'
                 value={day} onChange={(e) => setDay(e.target.value) }/>
             
 
             </div>
             <div className='form-control'>
-                <label>Important Task? (check if YES)</label>
+                <label>Priority Task? (check to highlight)</label>
                 <input type='checkbox' 
                 
                 checked={reminder}
